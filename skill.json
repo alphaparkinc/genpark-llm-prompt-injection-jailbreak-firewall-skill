@@ -1,0 +1,38 @@
+{
+  "name": "genpark-llm-prompt-injection-jailbreak-firewall-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Real-time LLM prompt injection, indirect jailbreak & sensitive system extraction firewall.",
+  "author": "genpark",
+  "category": "security",
+  "tags": [
+    "prompt-injection-firewall",
+    "jailbreak-detector",
+    "llm-security",
+    "adversarial-filter",
+    "agent-safety"
+  ],
+  "inputs": {
+    "user_input_prompt": {
+      "type": "string"
+    },
+    "strict_mode": {
+      "type": "boolean"
+    }
+  },
+  "outputs": {
+    "is_safe": {
+      "type": "boolean"
+    },
+    "threat_type": {
+      "type": "string"
+    },
+    "sanitized_prompt": {
+      "type": "string"
+    },
+    "latency_ms": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
